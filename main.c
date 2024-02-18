@@ -59,6 +59,8 @@ int main(int argc, char **argv){
             i++;
         }
 
+        
+
         if (strncmp(str, "exit",4)==0)//from lecture, checking if input matches exit cmd
         {
             printf("EXITING!\n");
