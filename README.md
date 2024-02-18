@@ -12,12 +12,15 @@ none so far
 Compiling this program:
 --
 run it idk?
+
 Running this program:
 --
 exec the file pls
+
 Challenges:
 --
 reading and writing without dissassociating
+
 Sources:
 --
 the lecture and documentation and various stack exchange forums.
