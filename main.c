@@ -13,6 +13,9 @@ Requirements for Project 1:
 #include <stdio.h>;
 #include <stdlib.h>;
 #include <string.h>;
+#include <unistd.h>;
+#include <sys/types.h>;
+#include <sys/wait.h>;
 
 #define MAX_ARGS 10
 
@@ -58,8 +61,20 @@ int main(int argc, char **argv){
             tokenArr = strtok(NULL," ");
             i++;
         }
-
-        
+            pid_t pid = fork();
+            if ((pid == 0 ){
+                execStatus = execvp(command, argList);
+                if (execStatus == -1)
+                {
+                    printf("Error: Command could not be executed\n");
+                    exit(1);
+                }
+                kill(pid, SIGTERM);
+            }
+            else{
+                waitpid(pid, status, 0);
+            }
+            
 
         if (strncmp(str, "exit",4)==0)//from lecture, checking if input matches exit cmd
         {
