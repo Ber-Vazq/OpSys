@@ -27,7 +27,7 @@ int main(int argc, char **argv){
 
         str[strcspn(str, "\n")] = '\0';//remove traling newline if there
 
-        if (strncmp(str, "exit",4)==0)
+        if (strncmp(str, "exit",4)==0)//from lecture, checking if input matches exit cmd
         {
             printf("EXITING!\n");
             break;
