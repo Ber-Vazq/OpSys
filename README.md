@@ -1,8 +1,7 @@
 # OpSys
 anything and everything for OS
 
-Project 1:
--Group:
+Project 1 Group:
 --
 Bernardo Vazquez(jkg215)
 
