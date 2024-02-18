@@ -61,8 +61,9 @@ int main(int argc, char **argv){
             tokenArr = strtok(NULL," ");
             i++;
         }
+            int execStatus;//just to make it work because it was yelling at me
             pid_t pid = fork();
-            if ((pid == 0 ){
+            if (pid == 0 ){
                 execStatus = execvp(command, argList);
                 if (execStatus == -1)
                 {
@@ -71,8 +72,8 @@ int main(int argc, char **argv){
                 }
                 kill(pid, SIGTERM);
             }
-            else{
-                waitpid(pid, status, 0);
+            else{ // parent
+                waitpid(pid, NULL, 0);//wait for your child please
             }
             
 
