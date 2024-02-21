@@ -7,11 +7,11 @@ Bernardo Vazquez (jkg215)
 
 Files and Directories:
 --
-none so far
+hopes and prayers, I am so sorry to whoever grades this i wrote this half awake
 
 Compiling this program:
 --
-run it idk?
+run it
 
 Running this program:
 --
